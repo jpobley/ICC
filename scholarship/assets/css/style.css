@@ -1,0 +1,40 @@
+.form-block {
+    border-left: 5px solid transparent;
+    padding-left: 10px;
+}
+.form-block .form-group {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.form-block:nth-child(1) {
+    border-left-color: #74e800;
+}
+.form-block:nth-child(2) {
+    border-left-color: #e88100;
+}
+.form-block:nth-child(3) {
+    border-left-color: #0071e8;
+}
+.form-block:nth-child(4) {
+    border-left-color: #ff008c;
+}
+.form-block .form-control {
+    width: 200px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.form-block .inner-block {
+    margin-bottom: 10px;
+    display: none;
+}
+.form-block #loans {
+    display: none;
+}
+.form-block #loan-add, .loan-remove {
+    cursor: pointer;
+}
+table#results td:nth-child(1) {
+    width: 250px;
+    font-weight: 700;
+}
