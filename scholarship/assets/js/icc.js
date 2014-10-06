@@ -200,5 +200,5 @@ $(document).ready(function() {
         }
     };
 
-    $("form#user-info").on("blur", "input", calculate);
+    $("form#user-info").on("keypress", "input", calculate);
 });
