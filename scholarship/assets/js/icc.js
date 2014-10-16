@@ -59,7 +59,7 @@ $(document).ready(function() {
                 calculate();
             });
         }).appendTo($loanWrap);
-        
+
         $.when(
             $loans.show(),
             $loanBlock.slideDown()
@@ -138,7 +138,7 @@ $(document).ready(function() {
 
             var contract = parseFloat($form.find("#contract-length").val());
             if (isNaN(contract)) contract = 0;
-            
+
             var grants = parseFloat($form.find("#grants").val());
             if (isNaN(grants)) grants = 0;
 
@@ -200,5 +200,6 @@ $(document).ready(function() {
         }
     };
 
-    $("form#user-info").on("keypress", "input", calculate);
+    $("form#user-info").on("blur", "input", calculate);
+    $("#refresh").click(calculate);
 });
